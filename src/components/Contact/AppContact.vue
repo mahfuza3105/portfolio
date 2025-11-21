@@ -2,7 +2,7 @@
   <section class="contact-me">
     <div class="container">
       <h2>Contact Me</h2>
-      <p>Feel free to reach out to me via phone, Instagram, or Telegram!</p>
+      <p>Feel free to reach out to me via phone, Instagram, Telegram, or GitHub!</p>
       <div class="contact-cards">
         <div class="contact-card">
           <h3>📞 Phone</h3>
@@ -18,6 +18,12 @@
           <h3>💬 Telegram</h3>
           <p>
             <a href="https://t.me/mahfuza_3105" target="_blank">@mahfuza_3105</a>
+          </p>
+        </div>
+        <div class="contact-card">
+          <h3>🐱 GitHub</h3>
+          <p>
+            <a href="https://github.com/mahfuza3105" target="_blank">github.com/your-github</a>
           </p>
         </div>
       </div>

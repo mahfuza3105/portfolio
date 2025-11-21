@@ -1,22 +1,32 @@
 <template>
   <header class="header">
     <div class="container header_navbar">
-      <a href="#"><img src="/src/assets/logo.png" alt="logo" class="logo" /></a>
-      <ul class="header_menu">
-        <li class="header_menu--item"><a href="#" class="header_link">About</a></li>
-        <li class="header_menu--item"><a href="#" class="header_link">Service</a></li>
-        <li class="header_menu--item"><a href="#" class="header_link">Works</a></li>
-        <li class="header_menu--item"><a href="#" class="header_link">Blog</a></li>
+      <a href="#"><img src="/src/assets/image.png" alt="logo" class="logo" /></a>
+      
+      <ul :class="['header_menu', { 'show-menu': menuOpen }]">
+        <li class="header_menu--item"><a href="#about" class="header_link">About</a></li>
+        
+        <li class="header_menu--item"><a href="#works" class="header_link">Works</a></li>
+        <li class="header_menu--item"><a href="#contact" class="header_link">Contact</a></li>
       </ul>
-      <button type="button" class="menu-btn"><img src="/src/assets/feather_menu.png" alt="menu"></button>
+      
+      <button type="button" class="menu-btn" @click="toggleMenu">
+        <img src="/src/assets/feather_menu.png" alt="menu">
+      </button>
     </div>
   </header>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const menuOpen = ref(false);
+const toggleMenu = () => {
+  menuOpen.value = !menuOpen.value;
+};
+</script>
 
 <style scoped>
-
 a, button {
   color: inherit;
   text-decoration: none;
@@ -28,7 +38,7 @@ a, button {
 }
 
 .header {
-  background-color: #d77ae7;
+  background-color: #a200ff;
   padding: 15px 20px;
   box-shadow: 0 4px 15px rgba(231, 96, 255, 0.3);
   position: sticky;
@@ -74,7 +84,7 @@ a, button {
   bottom: -2px;
   width: 0%;
   height: 2px;
-  background: #d77ae7;
+  background: #ffffff;
   transition: 0.3s;
 }
 
@@ -91,7 +101,20 @@ a, button {
 @media (max-width: 900px) {
   .header_menu {
     display: none; 
+    flex-direction: column;
+    background: #f09bff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
   }
+
+  .header_menu.show-menu {
+    display: flex; 
+  }
+
   .menu-btn {
     display: block;
   }

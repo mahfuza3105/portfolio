@@ -1,8 +1,7 @@
 <template>
   <section class="about-me">
     <div class="container">
-      <h2>About Me</h2>
-      <h3>What I actually love to do</h3>
+      <h3>About Me</h3>
       <div class="love-grid">
         <div class="love-item" v-for="(item, index) in loveItems" :key="index">
           <p>{{ item }}</p>
@@ -18,9 +17,9 @@ export default {
   data() {
     return {
       loveItems: [
-        "Hi! I’m Mahfuza, a passionate front-end developer who loves turning ideas into interactive web experiences. I enjoy coding, learning new technologies, and creating projects that not only look good but also work smoothly.",
-        "When I’m not coding, you can find me exploring anime, experimenting with design, or challenging myself with new projects. My goal is to grow as a developer and make the web a more creative place.",
-        "I also love sharing knowledge, collaborating with others, and constantly improving my skills. Building something that helps people or brings joy is what motivates me every day."
+        "Hi! I’m Mahfuza, a passionate Frontend Developer who loves turning ideas into interactive web experiences. I enjoy coding with Vue.js, React, JavaScript, HTML, and CSS. I also know English, which I use for reading documentation and collaborating on projects.",
+        "I love playing chess and have achieved 1st and 2nd places in regional competitions. Chess helps me develop logic, strategy, and patience, skills I also apply in web development.",
+        "I enjoy learning new technologies, improving my skills, and sharing knowledge. My goal is to create web projects that are not only functional but also visually appealing and user-friendly."
       ]
     }
   }
@@ -38,16 +37,6 @@ export default {
 .container {
   max-width: 1100px;
   margin: 0 auto;
-}
-
-h2 {
-  font-size: 3em;
-  margin-bottom: 20px;
-  text-align: center;
-  background: linear-gradient(90deg, #7b1fa2, #9c27b0, #d500f9);
-  
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
 }
 
 h3 {
@@ -82,9 +71,6 @@ h3 {
 }
 
 @media (max-width: 900px) {
-  h2 {
-    font-size: 2.2em;
-  }
   h3 {
     font-size: 1.6em;
   }
