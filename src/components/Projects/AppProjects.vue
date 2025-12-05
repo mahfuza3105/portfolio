@@ -20,7 +20,7 @@
 
           <button class="view-btn">View Project</button>
 
-          <!-- неоновая рамка -->
+          
           <span class="neon-ring"></span>
         </div>
       </div>
@@ -79,13 +79,13 @@ export default {
   overflow: hidden;
 }
 
-/* Фоновое сияние */
+
 .creative-projects::before {
   content: "";
   position: absolute;
   width: 1000px;
   height: 1000px;
-  background: radial-gradient(circle, rgba(160, 0, 255, 0.35), transparent 70%);
+  background: radial-gradient(circle, rgba(180, 0, 255, 0.35), transparent 70%);
   bottom: -350px;
   right: -250px;
   filter: blur(140px);
@@ -219,7 +219,7 @@ export default {
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .title { font-size: 2.3em; }
 }
 </style>

@@ -157,7 +157,7 @@ export default {
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .title { font-size: 2em; }
   .love-item { font-size: 1em; }
 }

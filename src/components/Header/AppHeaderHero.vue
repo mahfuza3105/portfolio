@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <!-- Подсветка от курсора -->
+    
     <div class="cursor-light" ref="cursorLight"></div>
   </section>
 </template>
@@ -174,7 +174,7 @@ const scrollToContact = () => {
 }
 
 /* Mobile */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .hero-container {
     flex-direction: column-reverse;
     text-align: center;

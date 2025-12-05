@@ -27,6 +27,10 @@ const toggleMenu = () => menuOpen.value = !menuOpen.value;
 </script>
 
 <style scoped>
+ul{
+  text-decoration: none; 
+  list-style-type: none;
+}
 /* ===== GLOBAL RESET ===== */
 a, button {
   color: inherit;
@@ -138,7 +142,7 @@ a, button {
 }
 
 /* ===== MOBILE MENU ===== */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
 
   .menu-btn {
     display: block;
